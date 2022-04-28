@@ -1,0 +1,1 @@
+web: gunicorn treasure_island.wsgi
