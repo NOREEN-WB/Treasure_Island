@@ -3,4 +3,29 @@
 
 The live link can be found here - (https://treasure-island.herokuapp.com/)
 
-Welcome to Treasure Island. Treasure Island is simple Blog but very informative blog site which give users information E-Commerce store. Treasure Island blog site is about E-Commerce Store's. Main 
+Welcome to Treasure Island. Treasure Island is simple Blog but very informative blog site which gives users information about E-Commerce stores. Treasure Island blog site is about E-Commerce Store's. This blog website will provide information to user: how many online stores are there. Which includes information regarding these stores. 
+
+This website will provide information about delivery providers. How many of global delivery providers are there. How they make sure that your parcel will be dillevered safely. It will explain about payment methods. How many ways are there to buy product online. Moreover this website will allow user complete CRUD system. User can register to website, user can comment on the blogs. User can add new category about E-Commerce and can add valueable information.
+
+## Table of Contents
+
+# Table of Contents
+ [1. User Expereince (UX) design](#ux)
+  - [1.1. Strategy:](#strategy)
+    - [Project Goals](#project-goals)
+        - [User Goals](#user-goals)
+        - [User Expectation](#user-expectation)
+  - [1.2. Structure](#structure)
+  - [1.3. Skeleton](#skeleton)
+
+ [2. Features](#features)
+
+ [3.Technologies used](#technologies-used)
+
+ [4.Testing](#testing)
+
+ [5.Bugs](#bugs)
+
+ [6. Deployment](#deployment)
+
+ [7. Acknowledgement](#acknowledgement)
