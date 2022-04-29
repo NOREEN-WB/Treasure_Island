@@ -22,3 +22,8 @@ class CommentAdmin(admin.ModelAdmin):
     list_display = ['name', 'body', 'post', 'created_on']
     list_filter = ['created_on']
     search_fields = ['name', 'email', 'body']
+
+@admin.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+    """Category Admin Class"""
+    list_display = ['name']

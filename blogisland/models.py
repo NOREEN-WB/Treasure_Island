@@ -7,6 +7,17 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
+class Category(models.Model):
+    """To categorize post accourdingly"""
+    name = models.CharField(max_length=60)
+
+    def __str__(self):
+        return self.name
+
+    def get_absolute_url(self):
+        """retrn back to home"""
+        return reverse('home')
+
 
 class Post(models.Model):
     """Post Model"""
