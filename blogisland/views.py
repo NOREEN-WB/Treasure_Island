@@ -3,7 +3,7 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
-from .forms import CommentForm
+from .forms import CommentForm, PostForm
 # Create your views here.
 
 
@@ -76,5 +76,5 @@ class PostLike(View):
 class AddPost(generic.CreateView):
     """Create new Blog Post"""
     model = Post
+    form_class = PostForm
     template_name = "Add_Post.html"
-    fields = '__all__'
