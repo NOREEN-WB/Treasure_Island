@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2 class="text-center">Add new Blog:</h2 >
+{% if user.is_authenticated %}
+    <div class="registration-form">
+        <div class="form-control">
+            <form method="POST" enctype="multipart/form-data">
+                <div class="form-icon"><span><i class="icon icon-user"></i></span></div>
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button class="btn btn-primary">Post</button>
+        </div>
+    </div>
+{% else %}
+    <div class="container">
+        <div class="row">
+            <div class="text-center">
+                <p>
+                    Oops! Its seems You are not logged In. Please log in first
+                    If you are not register please create account first!!
+                </p>
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+{% endblock %}
