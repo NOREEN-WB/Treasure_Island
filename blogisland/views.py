@@ -15,6 +15,12 @@ class PostList(generic.ListView):
     template_name = 'index.html'
     paginate_by = 6
 
+    def get_context_data(self, *args, **kwargs):
+        cat_menu = Category.objects.all()
+        context = super(PostList, self).get_context_data(*args, **kwargs)
+        context["cat_menu"] = cat_menu
+        return context
+
 
 class PostDetail(View):
     """Post Detail class to show single post after clicking on it"""
@@ -100,3 +106,24 @@ class AddCategory(generic.CreateView):
     model = Category
     template_name = 'add_category.html'
     form_class = CategoryForm
+
+
+class CategoryListView(generic.ListView):
+    """To show the categories"""
+    template_name = 'category_detail.html'
+    context_object_name = 'categorylist'
+
+    def get_context_data(self, *args, **kwargs):
+        cat_menu = Category.objects.all()
+        context = super(CategoryListView,
+        self).get_context_data(*args, **kwargs)
+        context["cat_menu"] = cat_menu
+        return context
+
+    def get_queryset(self):
+        content = {
+            'cat': self.kwargs['category'],
+            'posts': Post.objects.filter
+            (category__name=self.kwargs['category']).filter(status=1)
+        }
+        return content

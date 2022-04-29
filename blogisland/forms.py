@@ -13,6 +13,7 @@ class PostForm(forms.ModelForm):
             'slug',
             'author',
             'featured_image',
+            'category',
             'content',
             'status'
         )
@@ -22,6 +23,7 @@ class PostForm(forms.ModelForm):
             'title': forms.TextInput(attrs={'class': 'form-control'}),
             'slug': forms.TextInput(attrs={'class': 'form-control'}),
             'author': forms.Select(attrs={'class': 'form-control'}),
+            'category': forms.Select(attrs={'class': 'form-control'}),
             'content': forms.Textarea(attrs={'class': 'form-control'}),
             'status': forms.Select(attrs={'class': 'form-control'}),
 
