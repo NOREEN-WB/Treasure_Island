@@ -1,6 +1,6 @@
 """Imports"""
 from django import forms
-from .models import Comment, Post
+from .models import Comment, Post, Category
 
 
 class PostForm(forms.ModelForm):
@@ -27,6 +27,15 @@ class PostForm(forms.ModelForm):
 
         }
 
+
+class CategoryForm(forms.ModelForm):
+    """Caregories form to  give it a style"""
+    class Meta:
+        """Meta Class"""
+        model = Category
+        fields = ('name',)
+        widgets = {
+            'name': forms.TextInput(attrs={'class': 'form-control'}),}
 
 
 class CommentForm(forms.ModelForm):

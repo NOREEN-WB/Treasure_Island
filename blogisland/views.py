@@ -3,8 +3,8 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy
-from .models import Post
-from .forms import CommentForm, PostForm
+from .models import Post, Category
+from .forms import CommentForm, PostForm, CategoryForm
 # Create your views here.
 
 
@@ -93,3 +93,10 @@ class DeltePost(generic.DeleteView):
     model = Post
     template_name = 'delete_post.html'
     success_url = reverse_lazy('home')
+
+
+class AddCategory(generic.CreateView):
+    """To add Categories"""
+    model = Category
+    template_name = 'add_category.html'
+    form_class = CategoryForm
