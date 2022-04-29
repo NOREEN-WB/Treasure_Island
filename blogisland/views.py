@@ -2,6 +2,7 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
+from django.urls import reverse_lazy
 from .models import Post
 from .forms import CommentForm, PostForm
 # Create your views here.
@@ -85,3 +86,10 @@ class UpdatePost(generic.UpdateView):
     model = Post
     form_class = PostForm
     template_name = 'update_post.html'
+
+
+class DeltePost(generic.DeleteView):
+    """To Delte the Blog"""
+    model = Post
+    template_name = 'delete_post.html'
+    success_url = reverse_lazy('home')
