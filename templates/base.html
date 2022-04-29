@@ -59,40 +59,42 @@
                         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
                     {% if user.is_authenticated %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'add_post' %}">Add Post</a>
-                    </li>
-                    <div class="dropdown">
-                        <a
-                          class="nav-link dropdown-toggle"
-                          href="#"
-                          role="button"
-                          id="dropdownMenuLink"
-                          data-mdb-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          Categories
-                        </a>
-                      
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            {% for item in cat_menu %}
-                                <li><a class="dropdown-item" href="{% url 'category' item %}">{{ item }}</a></li>
-                            {% endfor%}
-                        </ul>
-                      </div>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'add_category' %}">Add Category</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'add_post' %}">Add Post</a>
+                        </li>
+                        {% if cat_menu %}
+                            <div class="dropdown">
+                                <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                id="dropdownMenuLink"
+                                data-mdb-toggle="dropdown"
+                                aria-expanded="false"
+                                >
+                                Categories
+                                </a>
+                            
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    {% for item in cat_menu %}
+                                        <li><a class="dropdown-item" href="{% url 'category' item %}">{{ item }}</a></li>
+                                    {% endfor%}
+                                </ul>
+                            </div>
+                        {% endif %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'add_category' %}">Add Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+                        </li>
                     {% else %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+                        </li>
                     {% endif %}
                 </ul>
                 <span class="navbar-text text-muted">
