@@ -84,7 +84,7 @@ class AddPost(generic.CreateView):
     """Create new Blog Post"""
     model = Post
     form_class = PostForm
-    template_name = "Add_Post.html"
+    template_name = "add_post.html"
 
 
 class UpdatePost(generic.UpdateView):
