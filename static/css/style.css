@@ -67,12 +67,6 @@ body {
     position: relative;
 }
 
-.masthead-image {
-    /* width: 50%; */
-    
-    
-}
-
 .masthead-image:after {
     content: "";
     top: 0;
