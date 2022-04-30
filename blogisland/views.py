@@ -129,3 +129,15 @@ class CategoryListView(generic.ListView):
             (category__name=self.kwargs['category']).filter(status=1)
         }
         return content
+
+
+def error_404(request):
+    """to show error 404"""
+    data = {}
+    return render(request, 'error_404.html', data)
+
+
+def error_500(request):
+    """to show error 500"""
+    data = {}
+    return render(request, 'error_500.html', data)
