@@ -11,6 +11,14 @@
                 </h1>
                 <!-- Post author | Post created date  -->
                 <p class="post-subtitle"> {{ post.author }}| {{ post.created_on }}</p>
+                {% if user.is_authenticated %}
+                    <button type="button" class="btn btn-light">
+                        <a href="{% url 'update_post' post.pk %}">Edit</a>
+                    </button>
+                    <button type="button" class="btn btn-light">
+                        <a href="{% url 'delete_post' post.pk %}">Delete</a>
+                    </button>
+                {% endif %}
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- featured image URL -->
@@ -96,6 +104,7 @@
                         <!-- comment body  -->
                         {{ comment.body | linebreaks }}
                     </div>
+                    <hr/>
                     <!-- Our for loop ends here -->
                     {% endfor %}
                 </div>
