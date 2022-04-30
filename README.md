@@ -30,21 +30,21 @@ Welcome to Treasure Island. Treasure Island is simple Blog but very informative 
 
  [7. Acknowledgement](#acknowledgement)
 
-  <a name="ux"></a>
- # 1. User Expereince (UX) design
-  [Go to top](#table-of-contents)
+ <a name="ux"></a>
+# 1. User Expereince (UX) design
+ [Go to top](#table-of-contents)
 
-  This blog website will provide information to user: how many online stores are there. Which includes information regarding these stores. This website will provide information about delivery providers. How many of global delivery providers are there. How they make sure that your parcel will be dillevered safely. 
+ This blog website will provide information to user: how many online stores are there. Which includes information regarding these stores. This website will provide information about delivery providers. How many of global delivery providers are there. How they make sure that your parcel will be dillevered safely. 
   
-  It will explain about payment methods. How many ways are there to buy product online. Multiple payment are added in the blog site. if user know any he can add it.
+ It will explain about payment methods. How many ways are there to buy product online. Multiple payment are added in the blog site. if user know any he can add it.
 
-  <a name="strategy"></a>
+ <a name="strategy"></a>
  # 1.1. Strategy
   [Go to top](#table-of-contents)
 
-  <a name="project-goals"></a>
-    ### Project Goals
+ <a name="project-goals"></a>
+  ### Project Goals
 
-   The main goal of the project is to allow CRUD system to user. User can resgister to website. User can view other people blog. 
-   User can login logout at any time. The blog site is responsive and eye catching.
+ The main goal of the project is to allow CRUD system to user. User can resgister to website. User can view other people blog. 
+ User can login logout at any time. The blog site is responsive and eye catching.
 
