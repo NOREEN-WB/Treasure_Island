@@ -102,4 +102,6 @@ Welcome to Treasure Island. Treasure Island is simple Blog but very informative 
  ### SignUp page
  ![Desktop Version](media/Mobile-Signup.PNG)
  
- 
+ <a name="features"></a>
+2. Features
+ [Go to top](#table-of-contents)
