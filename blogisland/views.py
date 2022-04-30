@@ -40,6 +40,7 @@ class PostDetail(View):
             "liked": liked,
             "comment_form": CommentForm()
         },)
+
     def post(self, request, slug, *args, **kwargs):
         """function to post comment"""
         queryset = Post.objects.filter(status=1)
@@ -66,6 +67,7 @@ class PostDetail(View):
             "liked": liked,
             "comment_form": CommentForm()
         },)
+
 
 class PostLike(View):
     """PostLike Class View"""

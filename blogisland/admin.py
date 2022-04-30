@@ -4,9 +4,6 @@ from django_summernote.admin import SummernoteModelAdmin
 from .models import Post, Comment, Category
 
 
-# Register your models here.
-
-
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
     """PostAdmin class"""
@@ -23,6 +20,7 @@ class CommentAdmin(admin.ModelAdmin):
     list_display = ['name', 'body', 'post', 'created_on']
     list_filter = ['created_on']
     search_fields = ['name', 'email', 'body']
+
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):

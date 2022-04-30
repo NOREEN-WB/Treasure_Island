@@ -7,6 +7,7 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
+
 class Category(models.Model):
     """To categorize post accourdingly"""
     name = models.CharField(max_length=60)
@@ -23,16 +24,26 @@ class Post(models.Model):
     """Post Model"""
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="blog_posts")
+    author = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        related_name="blog_posts")
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
     featured_image = CloudinaryField('image', default='placeholder')
-    category= models.ForeignKey(Category, max_length=60, on_delete=models.CASCADE,
-        default=1, related_name='category')
+    category = models.ForeignKey(
+        Category,
+        max_length=60,
+        on_delete=models.CASCADE,
+        default=1,
+        related_name='category')
     excerpt = models.TextField(blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
-    likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
+    likes = models.ManyToManyField(
+        User,
+        related_name='blog_likes',
+        blank=True)
 
     class Meta:
         """to get data"""
@@ -52,7 +63,10 @@ class Post(models.Model):
 
 class Comment(models.Model):
     """Comment class"""
-    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comments')
+    post = models.ForeignKey(
+        Post,
+        on_delete=models.CASCADE,
+        related_name='comments')
     name = models.CharField(max_length=80)
     email = models.EmailField()
     body = models.TextField()
