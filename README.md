@@ -208,7 +208,7 @@ Welcome to Treasure Island. Treasure Island is simple Blog but very informative 
  The project was deployed to GitHub and pushed throughout the devlopment process. The project was also deployed to Heroku in the early stages of development to ensure that there weren't any issues later on in the project. Mannual deploy was selected within Heroku and has been deployed the latest versio/update in the project.
 
 <a name="libraries"></a>
- ## 7.1 Libraries
+ ## 6.1 Libraries
  - pip3 install django gunicorn
  - pip3 install dj_database_url psycopg2 
  - pip3 install dj3-cloudinary-storage
@@ -222,14 +222,14 @@ Welcome to Treasure Island. Treasure Island is simple Blog but very informative 
 
 
 <a name="github"></a>
-  ## 7.2 Github
+  ## 6.2 Github
 
   Github was used for versiona control. Code was frequently pushed to github. whenever a new library was installed requirement.txt is updated. 
 
   Github is further used to conenct with other cloud service to get live app.
 
 <a name="heroku"></a>
-  ## 7.3 Heroku
+  ## 6.3 Heroku
 
   Heroku was used as cloud serer which is connected through our github repository. 
   
@@ -238,3 +238,21 @@ Welcome to Treasure Island. Treasure Island is simple Blog but very informative 
   Then we migrate our database and create super user. we are able to access the admin panel.
   
   After finishing development code is pushed to github. Then from github we connect to heroku though heroku cli and using git push heroku command in our terminal is code is pushed to heroku and our app live.
+
+ <a name="acknowledgement"></a>
+# 7 Acknowledgement
+ [Go to top](#table-of-contents)
+
+ ### Code
+
+ * The structure of the website came codestar blog app project
+ * The icons in the footer and contact page came from Font Awesome
+ * Thanks to my mentor Marcel Mulders for his constructive feedback.
+ * Material design bootstrap was used as cdn
+ * Add Blog / Blog details code taken from youtube udemy youtube.
+
+ ### Content
+
+ * All images came from unsplash https://unsplash.com/
+ * Descripton of the item was taken from Wkikipedia
+ 
