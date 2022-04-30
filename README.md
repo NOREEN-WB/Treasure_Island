@@ -34,5 +34,13 @@ Welcome to Treasure Island. Treasure Island is simple Blog but very informative 
  # 1. User Expereince (UX) design
   [Go to top](#table-of-contents)
 
-  This blog website will provide information to user: how many online stores are there. Which includes information regarding these stores. 
-  This website will provide information about delivery providers. How many of global delivery providers are there. How they make sure that your parcel will be dillevered safely. It will explain about payment methods. How many ways are there to buy product online. Multiple payment are added in the blog site. if user know any he can add it.
+  This blog website will provide information to user: how many online stores are there. Which includes information regarding these stores. This website will provide information about delivery providers. How many of global delivery providers are there. How they make sure that your parcel will be dillevered safely. 
+  
+  It will explain about payment methods. How many ways are there to buy product online. Multiple payment are added in the blog site. if user know any he can add it.
+
+  <a name="strategy"></a>
+ # 1.1. Strategy
+  [Go to top](#table-of-contents)
+
+  <a name="project-goals"></a>
+   Project Goals
