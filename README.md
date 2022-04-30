@@ -122,4 +122,4 @@ Welcome to Treasure Island. Treasure Island is simple Blog but very informative 
 
  ### Post detail
 
- Post detail page is shown 
+ Post detail page open when user clicked on the post. Where description of the post is being shown. On this Page user can add comments and like the post. Also delete and update button is shown so that user can update or delete the post.   

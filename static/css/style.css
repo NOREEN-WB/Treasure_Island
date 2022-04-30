@@ -178,3 +178,9 @@ body {
     color: white;
     margin-top: 20px;
 }
+
+/* to set the linebreak tag in comments page */
+.wdith {
+    width: 45%;
+    margin-bottom: 20px;
+}
