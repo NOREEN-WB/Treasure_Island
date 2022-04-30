@@ -56,3 +56,10 @@ Welcome to Treasure Island. Treasure Island is simple Blog but very informative 
  * User can Comment on blog post
  * User can like Post
  * User can Add Category
+
+  ### User Expectations:
+
+  * User should be able to register to website
+  * User should be able to Login/Logout to the website
+  * Website should be responsive
+  * User should be able to contact with the autorities
