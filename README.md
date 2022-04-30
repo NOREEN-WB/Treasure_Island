@@ -15,6 +15,7 @@ Welcome to Treasure Island. Treasure Island is simple Blog but very informative 
     - [Project Goals](#project-goals)
         - [User Goals](#user-goals)
         - [User Expectation](#user-expectation)
+        - [User Stories](#user-stories)
   - [1.2. Structure](#structure)
   - [1.3. Skeleton](#skeleton)
 
@@ -48,6 +49,7 @@ Welcome to Treasure Island. Treasure Island is simple Blog but very informative 
  The main goal of the project is to allow CRUD system to user. User can resgister to website. User can view other people blog. 
  User can login logout at any time. The Blog site is responsive and eye catching.
 
+ <a name="user-goals"></a>
  ### User Goals:
 
  * User can add Blog Post
@@ -57,9 +59,17 @@ Welcome to Treasure Island. Treasure Island is simple Blog but very informative 
  * User can like Post
  * User can Add Category
 
+ <a name="user-expectation"></a>
   ### User Expectations:
 
   * User should be able to register to website
   * User should be able to Login/Logout to the website
   * Website should be responsive
   * User should be able to contact with the autorities
+
+ <a name="user-stories"></a>
+ ### User Stories
+
+ Throughout the project I used the GitHub projects board to log all user stories as my project management tool. This helped me keep focus on the necesarry tasks as I would move them to the "in progress lane" as I'm working on the story. I would then move them to the "done" lane once the story has been completed.
+
+ ![User Stories Issuess](media/issuuess.JPG)
