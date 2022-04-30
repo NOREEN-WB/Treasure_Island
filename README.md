@@ -114,7 +114,12 @@ Welcome to Treasure Island. Treasure Island is simple Blog but very informative 
  ### HomePage
     Home page is designed using material design boots bootstrap. A jumbotron is placed right after the header. After the Jumbotorn a craousel is displayed which is also being designed by the material design bootstrap.
 
-    After the craousel list of the blog is displayed.
-    
+    After the craousel list of the blog is displayed. Total 6 post is being shown on the home page then a paginator is used to move items to the next page. This is a requirement by the codeinstitute. 
 
- ![Home Page](media/Mobile-Signup.PNG)
+
+ ![Home Page](media/feature-Home.JPG.PNG)
+ ![Home Page](media/feature-Home2.JPG.PNG)
+
+ ### Post detail
+
+ Post detail page is shown 
