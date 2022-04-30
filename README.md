@@ -89,11 +89,17 @@ Welcome to Treasure Island. Treasure Island is simple Blog but very informative 
  ![Desktop Version](media/AddCategory.PNG)
  
  ![Desktop Version](media/Recent-Post.PNG)
+ ### AddBlog
  ![Desktop Version](media/Mobile-AddBlog.PNG)
+ ### AddCategory
  ![Desktop Version](media/Mobile-AddCategory.PNG)
+ ### HomeMobile
  ![Desktop Version](media/Mobile-Home.PNG)
+ ### signIn Page 
  ![Desktop Version](media/Mobile-SignIn.PNG)
+ ### SignOut Page
  ![Desktop Version](media/Mobile-Signout.PNG)
+ ### SignUp page
  ![Desktop Version](media/Mobile-Signup.PNG)
  
  
