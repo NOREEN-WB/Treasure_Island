@@ -131,10 +131,9 @@ class CategoryListView(generic.ListView):
         return content
 
 
-def error_404(request):
+def error_404(request, exception):
     """to show error 404"""
-    data = {}
-    return render(request, 'error_404.html', data)
+    return render(request, 'error_404.html')
 
 
 def error_500(request):

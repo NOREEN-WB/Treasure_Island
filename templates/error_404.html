@@ -1,3 +1,13 @@
 <!-- Message for 404 error page handling-->
-<h2 class="add-post">Page not found. Please visit the home page</h2>
-<a href=" {% url 'home' %}" >Home Page
+<!-- {% extends 'base.html' %} -->
+{% block title %}404 error Page{% endblock %}
+
+{% block content %}
+<!-- Jumbotron -->
+<div class="p-5 text-center bg-light" style="margin-top: 58px;">
+    <h1 class="mb-3">Oops!! You are way lost my friends</h1>
+    <h4 class="mb-3">Let's go back</h4>
+    <a class="btn btn-primary" href="{% url 'home' %}" role="button">Home Page</a>
+  </div>
+  <!-- Jumbotron -->
+{% endblock %}
