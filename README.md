@@ -110,3 +110,11 @@ Welcome to Treasure Island. Treasure Island is simple Blog but very informative 
  * Authorization is also implemented
  * Only authorized user can add, update delete the blog or category
  * Dropdown on the category is palced so that each category can be views separatley
+
+ ### HomePage
+    Home page is designed using material design boots bootstrap. A jumbotron is placed right after the header. After the Jumbotorn a craousel is displayed which is also being designed by the material design bootstrap.
+
+    After the craousel list of the blog is displayed.
+    
+
+ ![Home Page](media/Mobile-Signup.PNG)
