@@ -110,12 +110,14 @@
                                             <i class="far fa-heart">{{ post.number_of_likes }}</i>
                                         </p>
                                         {% if user.is_authenticated %}
-                                            <button type="button" class="btn btn-light">
-                                                <a href="{% url 'update_post' post.pk %}">Edit</a>
-                                            </button>
-                                            <button type="button" class="btn btn-light">
-                                                <a href="{% url 'delete_post' post.pk %}">Delete</a>
-                                            </button>
+                                            {% if user.id == post.author.id %}
+                                                <button type="button" class="btn btn-light" style="margin-left: 10px;">
+                                                    <a href="{% url 'update_post' post.pk %}">Edit</a>
+                                                </button>
+                                                <button type="button" class="btn btn-light">
+                                                    <a href="{% url 'delete_post' post.pk %}">Delete</a>
+                                                </button>
+                                            {% endif %}
                                         {% endif %}
                                     </div>
                                 </div>
