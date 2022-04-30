@@ -16,8 +16,7 @@ Welcome to Treasure Island. Treasure Island is simple Blog but very informative 
         - [User Goals](#user-goals)
         - [User Expectation](#user-expectation)
         - [User Stories](#user-stories)
-  - [1.2. Structure](#structure)
-  - [1.3. Skeleton](#skeleton)
+  - [1.2. Skeleton](#skeleton)
 
  [2. Features](#features)
 
@@ -73,3 +72,12 @@ Welcome to Treasure Island. Treasure Island is simple Blog but very informative 
  Throughout the project I used the GitHub projects board to log all user stories as my project management tool. This helped me keep focus on the necesarry tasks as I would move them to the "in progress lane" as I'm working on the story. I would then move them to the "done" lane once the story has been completed.
 
  ![User Stories Issuess](media/issuuess.JPG)
+
+ <a name="skeleton"></a>
+ # 1.2. Skeleton
+  [Go to top](#table-of-contents)
+ 
+ ### Wireframes
+
+ ### Home 
+ ![Desktop Version](media/Home.PNG)
