@@ -24,17 +24,18 @@
         </div>
     </div>
 </div>
-{% if user.is_authenticated %}
-    {% if user.id == post.author.id %}
-        <button type="button" class="btn btn-light" style="margin-left: 10px;">
-            <a href="{% url 'update_post' post.pk %}">Edit</a>
-        </button>
-        <button type="button" class="btn btn-light">
-            <a href="{% url 'delete_post' post.pk %}">Delete</a>
-        </button>
-    {% endif %}
-{% endif %}
+
 <div class="container">
+    {% if user.is_authenticated %}
+        {% if user.id == post.author.id %}
+            <button type="button" class="btn btn-light" style="margin-left: 10px;">
+                <a href="{% url 'update_post' post.pk %}">Edit</a>
+            </button>
+            <button type="button" class="btn btn-light">
+                <a href="{% url 'delete_post' post.pk %}">Delete</a>
+            </button>
+        {% endif %}
+    {% endif %}
     <div class="row">
         <div class="col card mb-4  mt-3 left  top">
             <div class="card-body">
