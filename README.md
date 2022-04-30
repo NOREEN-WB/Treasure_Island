@@ -134,7 +134,7 @@ Welcome to Treasure Island. Treasure Island is simple Blog but very informative 
   ![Home Page](media/cat-2.JPG)
   ![Home Page](media/cat-3.JPG)
 
- ### Add Blob / Category
+ ### Add Blog / Category
 
  Django class is used to render the form on page. material design bootstrap is used to beautify the page. While adding the blog user have to select the category in which category he is adding the blog.
 
@@ -142,4 +142,16 @@ Welcome to Treasure Island. Treasure Island is simple Blog but very informative 
  ![Home Page](media/Add-Category.JPG)
 
 
- 
+ <a name="technologies-used"></a>
+# 3. Technologies Used
+ [Go to top](#table-of-contents)
+
+ * Python
+ * Javascript
+ * HTML5
+ * CSS
+ * mdboostrap 4
+ * Google Fonts
+ * Postgresql
+ * Balsamiq
+ * GitHub
