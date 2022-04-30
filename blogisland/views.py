@@ -3,6 +3,7 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy
+from django.contrib.messages.views import SuccessMessageMixin
 from .models import Post, Category
 from .forms import CommentForm, PostForm, CategoryForm
 # Create your views here.
@@ -82,11 +83,12 @@ class PostLike(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-class AddPost(generic.CreateView):
+class AddPost(SuccessMessageMixin, generic.CreateView):
     """Create new Blog Post"""
     model = Post
     form_class = PostForm
     template_name = "add_post.html"
+    success_message = "The new blog post has been added"
 
 
 class UpdatePost(generic.UpdateView):
@@ -94,6 +96,7 @@ class UpdatePost(generic.UpdateView):
     model = Post
     form_class = PostForm
     template_name = 'update_post.html'
+    success_message = "The post has Successfully edited"
 
 
 class DeltePost(generic.DeleteView):

@@ -23,4 +23,4 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
 ]
 
-handler404 = 'blogisland.views.error_404'
+HANDLER404 = 'blogisland.views.error_404'
