@@ -103,5 +103,10 @@ Welcome to Treasure Island. Treasure Island is simple Blog but very informative 
  ![Desktop Version](media/Mobile-Signup.PNG)
  
  <a name="features"></a>
-2. Features
+# 2. Features
  [Go to top](#table-of-contents)
+ 
+ * Authentication is a key feature of the project
+ * Authorization is also implemented
+ * Only authorized user can add, update delete the blog or category
+ * Dropdown on the category is palced so that each category can be views separatley
