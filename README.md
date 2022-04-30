@@ -27,6 +27,9 @@ Welcome to Treasure Island. Treasure Island is simple Blog but very informative 
  [5.Bugs](#bugs)
 
  [6. Deployment](#deployment)
+  - [6.1. Libraries](#libraries)
+  - [6.2. GitHub](#github)
+  - [6.3. Heroku](#heroku)
 
  [7. Acknowledgement](#acknowledgement)
 
@@ -184,16 +187,54 @@ Welcome to Treasure Island. Treasure Island is simple Blog but very informative 
  ![pep8-2](media/pep8-2.JPG)
 
 <a name="bugs"></a>
-# 4. Bugs
+# 5. Bugs
  [Go to top](#table-of-contents)
 
  There is no cuurent known bugs at the moment in app.
 
  - on some mobile devices post detail image dosen't show
 
- ## 4.1 Solved Bugs
+ ## 5.1 Solved Bugs
 
  - after installing all auth libraries i accidently put redirect urls and site ID after the Middleware section. due to this mistake i was unable to register and login.
 
  - so! after a lot of effort and seach online i figured it out how the redurect url have to be before middlware section. 
 
+
+<a name="deployment"></a>
+# 6. Deployment
+ [Go to top](#table-of-contents)
+
+ The project was deployed to GitHub and pushed throughout the devlopment process. The project was also deployed to Heroku in the early stages of development to ensure that there weren't any issues later on in the project. Mannual deploy was selected within Heroku and has been deployed the latest versio/update in the project.
+
+<a name="libraries"></a>
+ ## 7.1 Libraries
+ - pip3 install django gunicorn
+ - pip3 install dj_database_url psycopg2 
+ - pip3 install dj3-cloudinary-storage
+ - pip3 install django-summernote
+ - pip3 install django-allauth
+
+  Those are the libraries that were used in the project. 
+  
+  - Cloudinary was used to get/store images
+  - crispy forms was used for comments
+
+
+<a name="github"></a>
+  ## 7.2 Github
+
+  Github was used for versiona control. Code was frequently pushed to github. whenever a new library was installed requirement.txt is updated. 
+
+  Github is further used to conenct with other cloud service to get live app.
+
+<a name="heroku"></a>
+  ## 7.3 Heroku
+
+  Heroku was used as cloud serer which is connected through our github repository. 
+  
+  Heroku postgresql addons used as our database. which automaticly creates Database URL. which we use and in our env.py file and referenced it setting.py file.
+  
+  Then we migrate our database and create super user. we are able to access the admin panel.
+  
+  After finishing development code is pushed to github. Then from github we connect to heroku though heroku cli and using git push heroku command in our terminal is code is pushed to heroku and our app live.
