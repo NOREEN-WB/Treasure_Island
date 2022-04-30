@@ -182,3 +182,18 @@ Welcome to Treasure Island. Treasure Island is simple Blog but very informative 
 
  ![pep8-1](media/pep8-1.JPG)
  ![pep8-2](media/pep8-2.JPG)
+
+<a name="bugs"></a>
+# 4. Bugs
+ [Go to top](#table-of-contents)
+
+ There is no cuurent known bugs at the moment in app.
+
+ - on some mobile devices post detail image dosen't show
+
+ ## 4.1 Solved Bugs
+
+ - after installing all auth libraries i accidently put redirect urls and site ID after the Middleware section. due to this mistake i was unable to register and login.
+
+ - so! after a lot of effort and seach online i figured it out how the redurect url have to be before middlware section. 
+
