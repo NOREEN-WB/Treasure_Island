@@ -43,4 +43,8 @@ Welcome to Treasure Island. Treasure Island is simple Blog but very informative 
   [Go to top](#table-of-contents)
 
   <a name="project-goals"></a>
-   Project Goals
+    ### Project Goals
+
+   The main goal of the project is to allow CRUD system to user. User can resgister to website. User can view other people blog. 
+   User can login logout at any time. The blog site is responsive and eye catching.
+
