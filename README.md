@@ -3,9 +3,9 @@
 
 The live link can be found here - (https://treasure-island.herokuapp.com/)
 
-Welcome to Treasure Island. Treasure Island is simple Blog but very informative blog site which gives users information about E-Commerce stores. Treasure Island blog site is about E-Commerce Store's. This blog website will provide information to user: how many online stores are there. Which includes information regarding these stores. 
+Welcome to Treasure Island. Treasure Island is simple Blog but very informative blog site which gives users information about E-Commerce stores. Treasure Island blog site is about E-Commerce Store's. 
 
-This website will provide information about delivery providers. How many of global delivery providers are there. How they make sure that your parcel will be dillevered safely. It will explain about payment methods. How many ways are there to buy product online. Moreover this website will allow user complete CRUD system. User can register to website, user can comment on the blogs. User can add new category about E-Commerce and can add valueable information.
+ This blog website will allow user complete CRUD system. User can register to website, user can comment on the blogs. User can add new category about E-Commerce and can add valueable information.
 
 ## Table of Contents
 
@@ -29,3 +29,10 @@ This website will provide information about delivery providers. How many of glob
  [6. Deployment](#deployment)
 
  [7. Acknowledgement](#acknowledgement)
+
+  <a name="ux"></a>
+ # 1. User Expereince (UX) design
+  [Go to top](#table-of-contents)
+
+  This blog website will provide information to user: how many online stores are there. Which includes information regarding these stores. 
+  This website will provide information about delivery providers. How many of global delivery providers are there. How they make sure that your parcel will be dillevered safely. It will explain about payment methods. How many ways are there to buy product online. Multiple payment are added in the blog site. if user know any he can add it.
